@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+
+    <index name="bestSeller" meta_type="FieldIndex">
+        <indexed_attr value="bestSeller"/>
+    </index>
+    <column value="bestSeller"/>
+
+    <index name="quantityDiscount" meta_type="ZCTextIndex">
+        <indexed_attr value="quantityDiscount"/>
+        <extra name="index_type" value="Okapi BM25 Rank"/>
+        <extra name="lexicon_id" value="plone_lexicon"/>
+    </index>
+    <column value="quantityDiscount"/>
+
+    <index name="merchantID" meta_type="FieldIndex">
+        <indexed_attr value="merchantID"/>
+    </index>
+    <column value="merchantID"/>
+
+    <index name="imageSize" meta_type="FieldIndex">
+        <indexed_attr value="imageSize"/>
+    </index>
+    <column value="imageSize"/>
+
+    <index name="aspectRatio" meta_type="FieldIndex">
+        <indexed_attr value="aspectRatio"/>
+    </index>
+    <column value="aspectRatio"/>
+
+</object>
