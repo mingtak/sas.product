@@ -1,0 +1,3 @@
+<registry>
+  <records interface="sas.product.sasconfiglet.ISASConfiglet" />
+</registry>

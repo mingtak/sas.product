@@ -52,6 +52,14 @@ def test_suite():
 
         # -*- extra stuff goes here -*-
 
+        # Integration tests for SASConfiglet
+        ztc.ZopeDocFileSuite(
+            'SASConfiglet.txt',
+            package='sas.product',
+            optionflags = OPTION_FLAGS,
+            test_class=TestCase),
+
+
         # Integration tests for SASProduct
         ztc.ZopeDocFileSuite(
             'SASProduct.txt',
